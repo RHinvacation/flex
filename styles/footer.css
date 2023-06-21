@@ -1,0 +1,114 @@
+footer {
+	padding: 20px;
+	font-size: 14px;
+	color: #666;
+	border-top: 1px solid #ccc;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+footer ul li {
+	margin-right: 20px;
+}
+
+footer ul li:last-child {
+	margin-right: 0;
+}
+
+footer a {
+	color: #2e2d2d;
+}
+
+
+footer a:hover {
+	font-weight: bold;
+	color: #0066cc;
+}
+
+/* 较小屏幕 */
+@media screen and (max-width: 767px) {
+	footer p {
+		width: auto;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer span:first-child {
+		order: 2;
+		margin-bottom: 10px;
+	}
+
+	footer span:last-child {
+		order: 1;
+		margin-bottom: 10px;
+	}
+}
+
+/* 中等屏幕 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	footer p {
+		width: auto;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer span:first-child {
+		order: 2;
+		margin-bottom: 10px;
+	}
+
+	footer span:last-child {
+		order: 1;
+		margin-bottom: 10px;
+	}
+
+	footer ul li {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+/* 大屏幕及以上 */
+@media screen and (min-width: 992px) {
+	footer p {
+		min-width: 992px;
+		max-width: 1160px;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	footer span:first-child {
+		order: 1;
+		margin-bottom: 0;
+	}
+
+	footer span:last-child {
+		order: 2;
+		margin-bottom: 0;
+	}
+
+	footer ul li {
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+}

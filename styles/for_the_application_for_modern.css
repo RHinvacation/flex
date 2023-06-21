@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+video {
+	margin: 0;
+	padding: 0;
+}
+
+/* Main styles */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh; /* 设置最小高度以填充整个视口高度 */
+}
+
+main {
+	max-width: 1160px;
+	margin: 50px auto;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Section styles */
+.yin-ying {
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+	margin: 40px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+section span {
+	padding: 3.125rem;
+}
+
+h2 {
+	padding-top: 40px;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-indent: 0;
+	text-align: left; /* 设置左对齐 */
+}
+
+video {
+	width: 100%;
+}
+
+.jianjie {
+	margin-top: 10px;
+	line-height: 1.5;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+#中医药,
+#茶文化,
+#古典园林 {
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+}
+
+#中医药 p:first-of-type,
+#茶文化 p:first-of-type,
+#古典园林 p:first-of-type {
+	text-indent: 0;
+}
+
+#中医药 p,
+#茶文化 p,
+#古典园林 p {
+	text-indent: 2rem;
+	padding: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	main {
+		margin: 20px;
+		padding: 10px;
+	}
+
+	section {
+		margin: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main {
+		margin: 30px;
+		padding: 15px;
+	}
+
+	section {
+		margin: 30px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	main {
+		margin: 50px auto; /* 修改为居中对齐的 margin */
+		padding: 20px;
+		height: auto; /* 移除固定高度 */
+	}
+}

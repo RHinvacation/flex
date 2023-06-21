@@ -1,0 +1,385 @@
+/* 小屏幕: 最大宽度为767px */
+@media screen and (max-width: 767px) {
+
+	/* Header Styling */
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo img {
+		height: 40px;
+		width: 120px;
+	}
+
+	.nav-toggle {
+		display: block;
+		margin-left: 10px;
+		margin-top: 10px;
+		background: none;
+		border: none;
+		color: #333;
+		cursor: pointer;
+		height: 40px;
+		width: 40px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.nav-open nav {
+		display: block;
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 10px 15px;
+		margin-bottom: 10px;
+		/* 添加下方间距 */
+		text-decoration: none;
+		color: #333;
+		font-size: 16px;
+		font-weight: bold;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.nav-open nav ul li ul {
+		display: none;
+	}
+
+	.search input {
+		width: 100%;
+		/* 将输入框宽度设置为100% */
+		height: 30px;
+		/* 调整输入框高度 */
+	}
+
+	.search form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.search input {
+		height: 25px;
+		border-radius: 42px;
+		border: 1px solid #c0c0c0;
+		flex-grow: 1;
+	}
+
+	.search input:focus {
+		outline: none;
+	}
+
+	.search button:before {
+		content: "\f002";
+		font-family: FontAwesome;
+		color: #337ab7;
+	}
+
+	form input[type="text"] {
+		border: none;
+		border-radius: 6px;
+		border-bottom: 2px solid #ccc;
+		border-left: 2px solid #ccc;
+		border-right: 2px solid #ccc;
+		font-size: 16px;
+	}
+
+	form button[type="submit"] {
+		background-color: #0099ff;
+		color: #fff;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		cursor: pointer;
+		height: 30px;
+		/* 调整按钮高度 */
+		width: 80px;
+		/* 调整按钮宽度 */
+	}
+
+	form button[type="submit"]:hover {
+		background-color: #0066cc;
+	}
+}
+
+/* 中等屏幕: 768px - 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+	/* Header Styling */
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo img {
+		height: 50px;
+		width: 140px;
+	}
+
+	.nav-toggle {
+		display: block;
+		margin-left: 10px;
+		margin-top: 10px;
+		background: none;
+		border: none;
+		color: #333;
+		cursor: pointer;
+		height: 50px;
+		width: 50px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.nav-open nav {
+		display: block;
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 10px 15px;
+		margin-bottom: 10px;
+		/* 添加下方间距 */
+		text-decoration: none;
+		color: #333;
+		font-size: 16px;
+		font-weight: bold;
+		transition: all 0.3s ease-in-out;
+	}
+
+	nav ul ul li a {
+		text-indent: 20px;
+		/* 设置耳机菜单的文本缩进 */
+	}
+
+	nav ul ul ul li a {
+		text-indent: 40px;
+		/* 设置三级菜单的文本缩进 */
+	}
+
+	.search input {
+		width: 100%;
+		/* 将输入框宽度设置为100% */
+		height: 30px;
+		/* 调整输入框高度 */
+	}
+
+	.search form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.search input {
+		height: 25px;
+		border-radius: 42px;
+		border: 1px solid #c0c0c0;
+		flex-grow: 1;
+	}
+
+	.search input:focus {
+		outline: none;
+	}
+
+	.search button:before {
+		content: "\f002";
+		font-family: FontAwesome;
+		color: #337ab7;
+	}
+
+	form input[type="text"] {
+		border: none;
+		border-radius: 6px;
+		border-bottom: 2px solid #ccc;
+		border-left: 2px solid #ccc;
+		border-right: 2px solid #ccc;
+		font-size: 16px;
+	}
+
+	form button[type="submit"] {
+		background-color: #0099ff;
+		color: #fff;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		cursor: pointer;
+		height: 30px;
+		/* 调整按钮高度 */
+		width: 80px;
+		/* 调整按钮宽度 */
+	}
+
+	form button[type="submit"]:hover {
+		background-color: #0066cc;
+	}
+}
+
+
+
+/* 大屏幕: 992px 及以上，存放公共所有的参数 */
+@media screen and (min-width: 992px) {
+	.nav-toggle {
+		display: none;
+		/* 在大屏幕下隐藏导航按钮 */
+	}
+
+	/* Header Styling */
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
+
+	.logo img {
+		height: 60px;
+		width: 160px;
+	}
+
+	.logo,
+	form {
+		margin: auto;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		/* 将一级菜单居中对齐 */
+		background-color: #ffffff;
+	}
+
+	nav ul {
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav ul li {
+		position: relative;
+		/* 让下一级菜单定位时参考当前li元素 */
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 10px 15px;
+		text-decoration: none;
+		color: #333;
+		font-size: 16px;
+		font-weight: bold;
+		transition: all 0.3s ease-in-out;
+	}
+
+	nav ul li a:hover {
+		color: #0099ff;
+		border-bottom: 2px solid #4D4945;
+		padding-bottom: 6px;
+	}
+
+	nav ul ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: none;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		z-index: 1;
+		/* 将下一级菜单置于上一级菜单之上 */
+	}
+
+	nav ul li:hover>ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/* 将下一级菜单居中对齐 */
+		align-items: center;
+	}
+
+	nav ul ul li {
+		width: 130px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	nav ul ul li a {
+		padding: 10px 20px;
+		font-size: 14px;
+		font-weight: normal;
+	}
+
+	nav ul ul li:last-child {
+		border-bottom: none;
+	}
+
+	nav ul ul ul {
+		left: 100%;
+		top: 0;
+	}
+
+	/* 搜索框 */
+	form input[type="text"] {
+		border: none;
+		border-radius: 6px;
+		border-bottom: 2px solid #ccc;
+		border-left: 2px solid #ccc;
+		border-right: 2px solid #ccc;
+		font-size: 16px;
+	}
+
+	form button[type="submit"] {
+		background-color: #0099ff;
+		color: #fff;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	form button[type="submit"]:hover {
+		background-color: #0066cc;
+	}
+}
+
+/* 大屏幕: 992px - 1110px ，一级导航等具体参数的适配*/
+@media screen and (min-width: 992px) and (max-width: 1140px) {
+	form input[type="text"] {
+		width: 100px;
+		height: 30px;
+		margin-right: 1px;
+	}
+
+	form button[type="submit"] {
+		padding: 5px 8px;
+		/* 调整提交按钮的内边距 */
+	}
+}
+
+/* 大屏幕: 1141px 及以上，一级导航等具体参数的适配 */
+@media screen and (min-width: 1141px) {
+	form input[type="text"] {
+		padding: 8px;
+		width: 200px;
+		height: 24px;
+		margin-right: 10px;
+	}
+
+	form button[type="submit"] {
+		padding: 12px 20px;
+		/* 调整提交按钮的内边距 */
+	}
+
+}

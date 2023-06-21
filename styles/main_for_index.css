@@ -1,0 +1,818 @@
+/* 手机端样式 */
+@media screen and (max-width: 767px) {
+	.main_top {
+		width: 95%;
+		margin: 50px auto;
+		color: #7f7f7f;
+	}
+
+	.main_top p {
+		margin-top: 0.625rem;
+		line-height: 1.8;
+	}
+
+	.top_left h2 {
+		font-size: 2rem;
+		font-weight: normal;
+	}
+
+	.top_left h2 a {
+		color: darkred;
+	}
+
+	.top_left h2 a:hover {
+		font-weight: bold;
+	}
+
+	.top_right img {
+		border-radius: 15px;
+	}
+
+	.top_right {
+		display: flex;
+		justify-content: center;
+	}
+
+	.bottom h3 {
+		font-size: 1.7rem;
+		font-weight: normal;
+	}
+
+	.bottom i {
+		color: #bc082b;
+		font-size: 1.5rem;
+		margin-right: 0.6rem;
+	}
+
+	.main_middle {
+		background-color: #ccc;
+		padding: 40px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.jingqu {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.transbox {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	figure {
+		position: relative;
+		text-align: center;
+		margin: 0;
+	}
+
+	figure figcaption {
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(51, 51, 51, 0.5);
+		height: 2.5rem;
+		line-height: 2.5rem;
+		width: 100%;
+		color: white;
+		text-align: center;
+	}
+
+	.hua {
+		background-image: url("../images/for index/Traditional Chinese Art.png");
+		padding: 0;
+	}
+
+	.hua a {
+		background-color: #66a0e9;
+		display: block;
+		opacity: 0.8;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+		width: 100%;
+		height: 100%;
+	}
+
+	.ling {
+		background-image: url("../images/for index/Chinese Traditional Festival Customs.png");
+		padding: 0;
+	}
+
+	.ling a {
+		background-color: #e9647f;
+		display: block;
+		opacity: 0.8;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+		height: 100%;
+	}
+
+	.aing {
+		background: url("../images/for index/traditional_chinese_culture.jpeg.jpg") no-repeat;
+		padding: 0;
+	}
+
+	.aing a {
+		background-color: #6d84e9;
+		display: block;
+		opacity: 0.8;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+		height: 100%;
+	}
+
+	.m20 {
+		margin-top: 20px;
+	}
+
+	.m60 {
+		margin-top: 60px;
+	}
+
+	.mleft {
+		margin-left: 10px;
+	}
+
+	/* 传统文化的现代应用右上方的新闻超链接板块 */
+	.info-list {
+		background-color: #787878;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.info-list li {
+		margin-bottom: 10px;
+	}
+
+	.info-list li:first-child a {
+		font-weight: bold;
+	}
+
+	.info-list li a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	.info-list li a:hover {
+		font-weight: bold;
+		color: #ccc;
+	}
+
+	.info-list li:first-child {
+		text-align: right;
+	}
+
+	.main_bottom div div {
+		float: none;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.main_bottom>div {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.bottom_left {
+		padding-top: 8px;
+	}
+
+	.bottom_left p {
+		background: url("../images/recruitLeft.png") no-repeat, url("../images/recruitRight.png") no-repeat right bottom;
+		height: 7rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.main_bottom {
+		background: url("../images/for index/xianchengqiang.png");
+		height: 428px;
+		background-size: cover;
+	}
+
+	.bottom_right {
+		padding-top: 10px;
+		padding-bottom: 13px;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.bottom_right table {
+		color: white;
+		width: 90%;
+		margin: 2rem auto;
+	}
+
+	thead th {
+		border-bottom: 1.5px solid #ffffff;
+	}
+
+	table a {
+		color: #ffffff;
+	}
+
+	table a:hover {
+		color: #ccc;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.bottom_right table thead th:first-child {
+		text-align: left;
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
+
+	.bottom_right table thead th:last-child {
+		text-align: right;
+	}
+
+	.bottom_right table thead th:last-child a {
+		color: white;
+	}
+
+	.bottom_right table thead th {
+		border-bottom: 2px solid white;
+		padding-bottom: 0.5rem;
+	}
+
+	.bottom_right table tbody tr td:last-child {
+		text-align: right;
+	}
+
+	.bottom_right table tbody tr td {
+		line-height: 2rem;
+	}
+}
+
+/* 平板端 */
+@media screen and (min-width:768px) and (max-width:991px) {
+	.main_top {
+		width: 95%;
+		margin: 50px auto;
+		color: #7f7f7f;
+	}
+
+	.top_left h2 {
+		font-size: 2rem;
+		font-weight: normal;
+	}
+
+	.top_left h2 a {
+		color: darkred;
+	}
+
+	.top_left h2 a:hover {
+		font-weight: bold;
+	}
+
+	.top_right img {
+		border-radius: 15px;
+	}
+
+	.top_right {
+		display: flex;
+		justify-content: center;
+	}
+
+	.bottom h3 {
+		font-size: 1.7rem;
+		font-weight: normal;
+	}
+
+	.top_left p,
+	.bottom p {
+		margin-top: 15px;
+		line-height: 2;
+	}
+
+	.main_middle {
+		background-color: #ccc;
+		padding: 40px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.jingqu {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.transbox {
+		float: none;
+		width: 100%;
+	}
+
+	.hua {
+		background-image: url("../images/for index/Traditional Chinese Art.png");
+		padding: 0;
+	}
+
+	.hua a {
+		background-color: #66a0e9;
+		display: block;
+		opacity: 0.8;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+		width: 100%;
+		height: 100%;
+	}
+
+	.ling {
+		background-image: url("../images/for index/Chinese Traditional Festival Customs.png");
+		padding: 0;
+	}
+
+	.ling a {
+		background-color: #e9647f;
+		display: block;
+		opacity: 0.8;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+		height: 100%;
+	}
+
+	.aing {
+		background: url("../images/for index/traditional_chinese_culture.jpeg.jpg") no-repeat;
+		padding: 0;
+	}
+
+	.aing a {
+		background-color: #6d84e9;
+		display: block;
+		opacity: 0.8;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+		height: 100%;
+	}
+
+	.jingqu_img {
+		width: 100%;
+	}
+
+	.jingqu_img li {
+		float: left;
+		width: 32%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+	}
+
+	figure {
+		position: relative;
+		text-align: center;
+		margin: 0;
+	}
+
+	figure figcaption {
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(51, 51, 51, 0.5);
+		height: 2.5rem;
+		line-height: 2.5rem;
+		width: 100%;
+		color: white;
+		text-align: center;
+	}
+
+	/* 传统文化的现代应用右上方的新闻超链接板块 */
+	.info-list {
+		margin-top: 20px;
+		background-color: #787878;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.info-list li {
+		margin-bottom: 10px;
+	}
+
+	.info-list li:first-child a {
+		font-weight: bold;
+	}
+
+	.info-list li a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	.info-list li a:hover {
+		font-weight: bold;
+		color: #ccc;
+	}
+
+	.info-list li:first-child {
+		text-align: right;
+	}
+
+
+	/* Added code */
+	.main_bottom div div {
+		float: left;
+		width: 49%;
+	}
+
+	.main_bottom>div {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.main_bottom {
+		background-image: url("../images/for index/xianchengqiang.png");
+	}
+
+	.bottom_left {
+		height: 428px;
+		position: relative;
+	}
+
+	.bottom_left p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		color: white;
+		font-size: 18px;
+		background: url("../images/recruitLeft.png") no-repeat, url("../images/recruitRight.png") no-repeat right bottom;
+		height: 90px;
+		line-height: 90px;
+		text-align: center;
+	}
+
+	.bottom_right {
+		height: 428px;
+		position: relative;
+	}
+
+	table {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		height: 1.5em;
+		line-height: 1.5em;
+		background-color: rgba(0, 0, 0, 0.3);
+		color: white;
+	}
+
+	table th:first-child {
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	thead th>a,
+	tbody td>a {
+		text-align: right;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	table td,
+	table th {
+		line-height: 1.5;
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	th,
+	td {
+		text-align: left;
+	}
+
+	thead th {
+		border-bottom: 1.5px solid #ffffff;
+	}
+
+	table a {
+		color: #ffffff;
+	}
+
+	table a:hover {
+		color: #ccc;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	tbody {
+		font-size: 20px;
+	}
+
+}
+
+/* 电脑端样式 */
+@media screen and (min-width:992px) {
+	.main_top {
+		width: 80%;
+		margin: 50px auto;
+	}
+
+	.top_left {
+		float: left;
+		width: 51%;
+		position: relative;
+		height: 360px;
+	}
+
+	.top_left div {
+		position: absolute;
+		top: 60%;
+		transform: translateY(-50%);
+	}
+
+	.top_left h2 {
+		font: 500 38px 黑体;
+	}
+
+	.top_left h2 a {
+		color: darkred;
+	}
+
+	.top_left h2 a:hover {
+		font-weight: bold;
+	}
+
+	.top_right {
+		float: left;
+		width: 36%;
+		margin-left: 13%;
+		height: 500px;
+	}
+
+	img {
+		border-radius: 5px;
+	}
+
+	.bottom {
+		float: left;
+		width: 30%;
+		margin-right: 3%;
+	}
+
+	.bottom h3 {
+		font: 200 24px 黑体;
+	}
+
+	.top_left p,
+	.bottom p {
+		margin-top: 15px;
+		line-height: 2;
+	}
+
+	.main_middle {
+		background-color: #c5c5c5;
+		padding: 60px 0;
+	}
+
+	.jingqu {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.transbox {
+		float: left;
+		width: 30%;
+	}
+
+	.jingqu_img {
+		float: left;
+		width: 70%;
+	}
+
+	.jingqu_img li {
+		float: left;
+		width: 31%;
+	}
+
+	.hua {
+		background: url("../images/for index/Traditional Chinese Art.png") no-repeat;
+	}
+
+	.hua a {
+		background-color: #66a0e9;
+	}
+
+	.ling {
+		background: url("../images/for index/Chinese Traditional Festival Customs.png") no-repeat;
+		position: relative;
+	}
+
+	.aing {
+		background: url("../images/for index/traditional_chinese_culture.jpeg.jpg") no-repeat;
+		position: relative;
+	}
+
+	.ling a {
+		background-color: #e9647f;
+	}
+
+	.aing a {
+		background-color: #6d84e9;
+	}
+
+	.ling a,
+	.hua a,
+	.aing a {
+		display: block;
+		height: 470px;
+		line-height: 470px;
+		opacity: 0.8;
+		text-align: center;
+		color: white;
+		font-size: 30px;
+		border-radius: 5px;
+	}
+
+	/* Apply rounded corners to transbox class */
+	.hua,
+	.ling,
+	.aing {
+		border-radius: 5px;
+	}
+
+	.jingqu_img figure {
+		position: relative;
+	}
+
+	.jingqu_img figcaption {
+		position: absolute;
+		bottom: 0;
+		color: white;
+		height: 30px;
+		line-height: 30px;
+		display: block;
+		border-radius: 5px;
+		background-color: rgba(51, 51, 51, 0.5);
+		width: 100%;
+		text-align: center;
+	}
+
+	.m20 {
+		margin-top: 20px;
+	}
+
+	.m60 {
+		margin-top: 60px;
+	}
+
+	.m125 {
+		margin-top: 20px;
+	}
+
+	.mleft {
+		margin-left: 10px;
+	}
+
+	figure a {
+		color: #ffffff;
+	}
+
+	figure a:hover {
+		font-weight: bold;
+	}
+
+	/* Hyperlink section in the top right corner of "传统文化的现代应用" */
+	strong {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+	}
+
+	.info-list {
+		background-color: #787878;
+		border-radius: 5px;
+		padding: 10px;
+		margin-bottom: 25px;
+	}
+
+	.info-list li {
+		margin-bottom: 10px;
+	}
+
+	.info-list li:first-child a {
+		font-weight: bold;
+	}
+
+	.info-list li a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	.info-list li a:hover {
+		font-weight: bold;
+		color: #ccc;
+	}
+
+	.info-list li:first-child {
+		text-align: right;
+	}
+
+	/* Added code */
+	.main_bottom div div {
+		float: left;
+		width: 49%;
+	}
+
+	.main_bottom>div {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.main_bottom {
+		background-image: url("../images/for index/xianchengqiang.png");
+	}
+
+	.bottom_left {
+		height: 428px;
+		position: relative;
+	}
+
+	.bottom_left p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		color: white;
+		font-size: 18px;
+		background: url("../images/recruitLeft.png") no-repeat, url("../images/recruitRight.png") no-repeat right bottom;
+		height: 90px;
+		line-height: 90px;
+		text-align: center;
+	}
+
+	.bottom_right {
+		height: 428px;
+		position: relative;
+	}
+
+	table {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		height: 1.5em;
+		line-height: 1.5em;
+		background-color: rgba(0, 0, 0, 0.3);
+		color: white;
+	}
+
+	table th:first-child {
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	thead th>a,
+	tbody td>a {
+		text-align: right;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	table td,
+	table th {
+		line-height: 1.5;
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	th,
+	td {
+		text-align: left;
+	}
+
+	thead th {
+		border-bottom: 1.5px solid #ffffff;
+	}
+
+	table a {
+		color: #ffffff;
+	}
+
+	table a:hover {
+		color: #ccc;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	tbody {
+		font-size: 20px;
+	}
+}

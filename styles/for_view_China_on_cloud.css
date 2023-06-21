@@ -1,0 +1,158 @@
+/* 设置页面背景颜色 */
+.background {
+	background-color: beige;
+}
+
+/* 主要内容区域样式 */
+main {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* 主页标题样式 */
+h1 {
+	font-size: 26px;
+	font-weight: bold;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* 主页简介样式 */
+p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+/* 展览标题样式 */
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* 导航样式 */
+.zhanwei{
+	padding: 1.25rem;
+}
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.nav-li {
+	margin-left: 30px;
+	margin-right: 30px;
+	color: #000;
+	font-size: 1.5rem;
+}
+
+.nav-li:hover {
+	font-weight: bold;
+}
+
+/* 时间和地址样式 */
+.text_info_top {
+	padding: 10px;
+}
+
+.text_info_top p {
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.time,
+.address {
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.text_info_top div ul li a:hover {
+	font-weight: bold;
+}
+
+.text_info p {
+	text-indent: 2rem;
+	line-height: 1.8rem;
+}
+
+/* 展品列表样式 */
+.Exhibits_one_list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.Exhibits_one_list .item {
+	/* 设置每个元素的宽度 */
+	width: 32.5%;
+	/* 设置元素之间的垂直间距 */
+	margin-bottom: 10px;
+}
+
+.Exhibits_one_list .item img {
+	border-radius: 5px;
+}
+
+.Exhibits_one_list .item dd {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+/* 超链接——查看更多展品 */
+.item a:hover {
+	opacity: 0.7;
+}
+
+/* 全景样式 */
+.panorama {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.panorama img {
+	width: 100%;
+	max-width: 1160px;
+	height: auto;
+}
+
+.panorama img:hover {
+	opacity: 0.7;
+}
+
+/* 媒体查询 */
+@media only screen and (max-width: 767px) {
+
+	/* 在较小屏幕上的样式 */
+	.Exhibits_one_list .item {
+		width: 100%;
+	}
+
+	.nav-li {
+		font-size: 0.98rem;
+		/* 调整超链接文字的大小为0.98rem */
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/* 在中等屏幕上的样式 */
+	.Exhibits_one_list .item {
+		width: 49%;
+	}
+	.nav-li {
+		font-size: 1.2rem;
+		/* 调整超链接文字的大小为1.2rem*/
+	}
+}
+
+@media only screen and (min-width: 992px) {
+
+	/* 在大屏幕上的样式 */
+	.Exhibits_one_list .item {
+		width: 32.5%;
+	}
+}

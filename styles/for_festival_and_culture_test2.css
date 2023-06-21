@@ -1,0 +1,73 @@
+/* 确定页面最大宽度 */
+main {
+	max-width: 1160px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* 左侧主要内容 */
+.content {
+	flex: 0 0 calc(100% - 240px);
+	padding: 20px;
+}
+
+.content>div {
+	margin-bottom: 30px;
+}
+
+.content h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.content p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/* 右侧侧栏内容 */
+.sidebar {
+	width: 200px;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+
+.sidebar h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar li {
+	margin-bottom: 1rem;
+}
+
+.sidebar li a {
+	display: block;
+	width: 60px;
+	text-decoration: none;
+	color: #333;
+}
+
+.sidebar li a:hover {
+	color: #000;
+	font-weight: bold;
+	padding-bottom: 6px;
+}

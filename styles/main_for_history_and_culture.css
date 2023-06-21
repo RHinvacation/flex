@@ -1,0 +1,197 @@
+/* Main container */
+main {
+	max-width: 1300px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Sections */
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+/* Hengxian Container */
+.hengxian_containter {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* Title */
+h2 {
+	font-size: 32px;
+	background-image: url("../images/section-header.png")no-repeat;
+	background-position: center;
+}
+
+/* Top Left */
+.top_left {
+	flex-basis: 300px;
+}
+
+/* Top Right */
+.top_right {
+	flex-grow: 1;
+	margin-left: 20px;
+}
+
+/* Section Title */
+h3 {
+	color: darkred;
+}
+
+/* Section Paragraphs */
+p {
+	margin-bottom: 10px;
+}
+
+/* List */
+section ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section.box1 ul li {
+	flex-basis: 767px;
+	margin: 20px;
+	list-style: none;
+	border-radius: 5px;
+}
+
+/* List Item */
+section.box2 ul li {
+	flex-basis: 350px;
+	margin: 20px;
+	list-style: none;
+	border-radius: 5px;
+}
+
+li.transbox a {
+	color: #333;
+}
+
+li.transbox a:hover {
+	font-weight: bold;
+}
+
+li.transbox img {
+	height: auto;
+	border-radius: 5px;
+}
+
+/* Transbox */
+.transbox {
+	background-color: rgba(221, 222, 208, 0.8);
+	padding: 10px;
+	text-align: center;
+}
+
+/* Transbox Image */
+.transbox img {
+	max-width: 100%;
+}
+
+/* Transbox Text */
+.transbox div {
+	margin-top: 10px;
+}
+
+/* 媒体查询：小屏幕样式 */
+@media screen and (max-width: 767px) {
+	main {
+		padding: 10px;
+	}
+
+	.box1 {
+		margin-bottom: 20px;
+	}
+
+	.top_left {
+		float: none;
+		text-align: center;
+	}
+
+	.top_right {
+		margin-top: 10px;
+		text-align: left;
+	}
+}
+
+/* 媒体查询：中等屏幕样式 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main {
+		padding: 20px;
+	}
+
+	.hengxian_containter {
+		text-align: center;
+	}
+
+	.box1 {
+		margin-bottom: 30px;
+	}
+
+	.top_left {
+		float: left;
+		width: 46%;
+		margin-right: 10px;
+	}
+
+	.top_right {
+		float: right;
+		width: 48%;
+	}
+
+	/* 中等屏幕下第二个区块样式 */
+	.box2 {
+		margin-bottom: 30px;
+		text-align: left;
+	}
+}
+
+/* 媒体查询：大屏幕样式 */
+@media screen and (min-width: 992px) {
+	main {
+		padding: 30px;
+	}
+
+	.hengxian_containter {
+		text-align: center;
+	}
+
+	.box1 {
+		margin-bottom: 40px;
+		max-width: 1100px;
+	}
+
+	.top_left {
+		float: left;
+		width: 49%;
+		margin-right: 1%;
+	}
+
+	.top_right {
+		float: right;
+		width: 50%;
+	}
+
+	/* 大屏幕下第二个区块样式 */
+	.box2 {
+		margin-bottom: 30px;
+		max-width: 1300px;
+	}
+
+	/* 大屏幕下每3个transbox元素占一行 */
+	li.transbox {
+		margin-bottom: 10px;
+	}
+
+}

@@ -1,0 +1,122 @@
+/* 主要内容区域样式 */
+
+main {
+	margin: 0 auto;
+	max-width: 1160px;
+	padding: 20px;
+	display: flex;
+	/* 添加弹性布局 */
+	flex-direction: column;
+	/* 垂直方向排列子元素 */
+}
+
+.hengxian_container {
+	position: relative;
+	/* 让容器元素成为图片的参考点 */
+}
+
+nav>img {
+	display: block;
+	/* 将图片设置为块级元素，让其独占一行 */
+	position: absolute;
+	/* 将图片定位到容器元素的底部 */
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	/* 居中对齐图片 */
+	margin-top: 10px;
+	/* 给图片和文本之间留出一些间距 */
+	vertical-align: middle;
+	/* 将图片垂直居中 */
+}
+
+/* 标题样式 */
+
+h1 {
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+h2 {
+	font-size: 20px;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	color: #333;
+}
+
+/* 段落样式 */
+
+div>p {
+	text-indent: 2em;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+ul>p {
+	font-size: 14px;
+	line-height: 1.2;
+	color: #555;
+	margin-bottom: 12px;
+}
+
+section ul {
+	margin-bottom: 30px;
+}
+
+/* 链接样式 */
+
+p>a {
+	color: #0077cc;
+	text-decoration: none;
+}
+
+p>a:hover {
+	text-decoration: underline;
+}
+
+/* 媒体查询 */
+
+/* 较小屏幕 */
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	div>p,
+	ul>p {
+		font-size: 16px;
+		line-height: 1.4;
+	}
+}
+
+/* 中等屏幕 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	div>p,
+	ul>p {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+}
+
+/* 大屏幕 */
+@media screen and (min-width: 992px) {
+	/* 没有额外的样式调整 */
+}
